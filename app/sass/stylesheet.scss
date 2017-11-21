@@ -1,5 +1,7 @@
+@import "vars";
+
 body {
-    display: none;
+    opacity: 1; display: none;
     font-family: $main-font;
     color: $main-color;
     background-color: $main-background-color;
@@ -195,7 +197,7 @@ html:-moz-full-screen .arr-expand    { background-position: right center; }
         -webkit-tap-highlight-color: rgba(255,255,255,.1);
         tap-highlight-color: hsla(0,0%,100%,.1);
     }
-    .mm-listview > li a , .mm-navbar > * { text-shadow: 0 1px 1px rgba(0,0,0,0.8); }
+    .mm-listview > li a , .mm-navbar > * { text-shadow: 0 1px 1px rgba(0,0,0,0.8); color: $mm-main-color; }
     .mm-listview>li>a, .mm-listview>li>span {
         color: $mm-main-color;
         &:hover { color: $mm-hover-color; }
@@ -203,6 +205,9 @@ html:-moz-full-screen .arr-expand    { background-position: right center; }
     .mm-listview>li.mm-selected>a:not(.mm-next), .mm-listview>li.mm-selected>span {
         background-color: darken($mm-theme-black, 2%);
     }
+    .mm-listview>li .mm-next:after  { border-color: darken($mm-main-color, 1%); opacity: 0.75; }
+    .mm-listview>li .mm-next:before { opacity: 0.5 }
+    .mm-btn:after, .mm-btn:before   { border-color: darken($mm-main-color, 1%); top: 6px; opacity: 0.8; }
 }
 .mm-menu.mm-theme-white {
     .mm-listview li:hover { background-color: lighten($mm-theme-white, 2%); }
@@ -222,6 +227,7 @@ html:-moz-full-screen .arr-expand    { background-position: right center; }
     .mm-listview>li.mm-selected>a:not(.mm-next), .mm-listview>li.mm-selected>span {
         background-color: darken($mm-theme-white, 3%);
     }
+    .mm-btn:after, .mm-btn:before { top:5px; }
 }
 .mm-listview > li a , .mm-navbar > * { font-weight: $mm-font-weight; }
 .mm-menu .glyphicon { font-size: 110%; margin-right: 5px; }
@@ -383,8 +389,8 @@ html:-moz-full-screen #main-menu-big ul li a    { font-size: 22px; font-weight: 
 
 .animate_title {
     color: #1e65a5;
-    background-image: webkit-linear-gradient(90deg,#f35626, #eee);
-    background-image: linear-gradient(top,#f35626, #eee);
+    /*background-image: webkit-linear-gradient(90deg,#f35626, #eee);
+    background-image: linear-gradient(top,#f35626, #eee); */
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
