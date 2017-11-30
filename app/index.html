@@ -1,79 +1,407 @@
 <!DOCTYPE html>
 <html lang="ua">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/libs.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-	<style>
-		html { background-color: #1a1a1a; }
-	</style>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <style>
+        html {
+            background-color: #1a1a1a;
+        }
+    </style>
     <!-- Chrom , FFox OS , Opera -->
-	<meta name="theme-color" content="#202020">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#202020">
-	<!-- iOS Safaric -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#202020" />
+    <meta name="theme-color" content="#202020">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#202020">
+    <!-- iOS Safaric -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#202020"/>
 
 </head>
 <body>
-	<div class="page">
-		<header id="top-header">
-		<div class="z-mask"></div>
-		<div class="z-full-screen"><span class="arr-expand"></span></div>
-		<a href="#main-menu" class="hamburger hamburger--spring-r" type="button">
+<div class="page">
+    <header id="top-header">
+        <div class="z-mask"></div>
+        <div class="z-full-screen"><span class="arr-expand"></span></div>
+        <a href="#main-menu" class="hamburger hamburger--spring-r" type="button">
 		    <span class="hamburger-box">
 			  <span class="hamburger-inner"></span>
 		    </span>
-		</a>
-		<nav id="main-menu">
-			<ul>
-				<li><a href="#"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Верхний контейнер</a></li>
-				<li class="active"><a href="#"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Портфолио</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Программа</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Комманда</a>
-					<ul class="inset uli-1">
-						<li><a href="#">Комманда 1</a>
-							<ul class="inset uli-2">
-								<li><a href="#">Комманда 11</a></li>
-								<li><a href="#">Комманда 12</a></li>
-								<li><a href="#">Комманда 13</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Комманда 2</a></li>
-						<li><a href="#">Комманда 3</a></li>
-					</ul>
-				</li>
-				<li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Контакты</a></li>
-			</ul>
-		</nav>
-		<div class="exo">
-			<span>f</span><span>r</span><span>o</span><span>n</span><span>t</span> <span>e</span><span>n</span><span>d</span> <span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
-		</div>
-	</header>
+        </a>
+        <nav id="main-menu">
+            <ul>
+                <li><a href="#"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Верхний
+                    контейнер</a></li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                    Портфолио</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Программа</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Комманда</a>
+                    <ul class="inset uli-1">
+                        <li><a href="#">Комманда 1</a>
+                            <ul class="inset uli-2">
+                                <li><a href="#">Комманда 11</a></li>
+                                <li><a href="#">Комманда 12</a></li>
+                                <li><a href="#">Комманда 13</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Комманда 2</a></li>
+                        <li><a href="#">Комманда 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="exo">
+            <span>f</span><span>r</span><span>o</span><span>n</span><span>t</span>
+            <span>e</span><span>n</span><span>d</span>
+            <span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>i</span><span>n</span><span>g</span>
+        </div>
+
+        <div id="img-romb" class="img-clip-wrap">
+            <div class="clip-romb cr-1"></div>
+            <br>
+            <div class="clip-romb cr-2"></div>
+            <div class="clip-romb cr-3"></div>
+            <br>
+            <div class="clip-romb cr-4"></div>
+        </div>
+
+    </header>
+
+    <section id="resume" class="box">
+
+        <div class="container">
+
+            <div class="section-header animated">
+                <h2>Что я могу</h2>
+                <div class="section-descr-wrap">
+                    <div class="section-descr">
+                        навыки и опыт работы
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-content">
+
+                <div class="row resume-container">
+
+                    <div class="s-item col-sm-6 col-xs-12">
+                        <div class="animated">
+                            <a href="https://ru.wikipedia.org/wiki/HTML" target="_blank">
+                                <img class="skill-img" src="img/skill-html.png" alt="html">
+                            </a>
+                        </div>
+
+                        <div class="s-item-body animated">
+                            <h3>HTML</h3>
+                            <h4><a href="https://ru.wikipedia.org/wiki/HTML" target="_blank">Hypertext markup language</a></h4>
+                            <div class="text">
+                            <p>Стандартизи&shy;рован&shy;ный язык раз&shy;мет&shy;ки доку&shy;мен&shy;тов во Все&shy;мир&shy;ной пау&shy;ти&shy;не.
+                                Большин&shy;ство веб-стра&shy;ниц содер&shy;жат описа&shy;ние раз&shy;мет&shy;ки на язы&shy;ке HTML (или XHTML).
+                                Язык HTML интер&shy;прети&shy;рует&shy;ся брау&shy;зе&shy;рами; полу&shy;ченный в резуль&shy;тате интер&shy;пре&shy;тации форма&shy;тиро&shy;ван&shy;ный текст отобра&shy;жает&shy;ся на экра&shy;не мони&shy;то&shy;ра ком&shy;пью&shy;те&shy;ра или мо&shy;биль&shy;ного уст&shy;ройства.</p>
+                            <p>HTML создавался как язык для обме&shy;на науч&shy;ной и техни&shy;чес&shy;кой докумен&shy;та&shy;ци&shy;ей, пригод&shy;ный для исполь&shy;зова&shy;ния людь&shy;ми, не являю&shy;щими&shy;ся специ&shy;алиста&shy;ми в облас&shy;ти вёрстки.
+                                HTML успешно справ&shy;лял&shy;ся с пробле&shy;мой слож&shy;ности SGML путём опреде&shy;ле&shy;ния неболь&shy;шого на&shy;бора струк&shy;турных и семан&shy;тичес&shy;ких эле&shy;мен&shy;тов - дескрип&shy;торов.
+                                Был разра&shy;ботан британс&shy;ким учёным Тимом Бернер&shy;сом-Ли прибли&shy;зитель&shy;но в 1986-1991 годах в сте&shy;нах ЦЕРНа в Женеве, Швей&shy;ца&shy;рия.</p>
+                             <p class="skill-p">Опыт: 5 лет, уровень: высокий</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-item col-sm-6 col-xs-12">
+                        <div class="animated">
+                            <a href="#" target="_blank">
+                                <img class="skill-img" src="img/skill-css.png" alt="css">
+                            </a>
+                        </div>
+
+                        <div class="s-item-body animated">
+                            <h3>CSS</h3>
+                            <h4><a href="#" target="_blank">Design language</a></h4>
+                            <div class="text">
+                                <p>Каскадные таблицы стилей - формаль&shy;ный язык описа&shy;ния внеш&shy;него вида докумен&shy;та, написан&shy;ного с исполь&shy;зова&shy;нием языка раз&shy;метки.
+                                    Преимущест&shy;вен&shy;но исполь&shy;зует&shy;ся как сред&shy;ство описа&shy;ния, оформ&shy;ления внеш&shy;него вида веб-страниц, написан&shy;ных с помощью язы&shy;ков раз&shy;метки HTML и XHTML.</p>
+                                <p>CSS используется создателями веб-страниц для зада&shy;ния цветов, шрифтов, распо&shy;ложения отдель&shy;ных блоков и других аспектов пред&shy;став&shy;ления внеш&shy;него вида этих веб-страниц.
+                                    Основ&shy;ной целью разра&shy;ботки CSS являлось разделе&shy;ние описания логи&shy;ческой струк&shy;туры веб-страницы (которое произво&shy;дится с помощью HTML или других языков разметки) от
+                                    описания внеш&shy;него вида этой веб-страницы (которое теперь произ&shy;водится с помощью формального языка CSS).
+                                    Такое разде&shy;ле&shy;ние может увели&shy;чить доступ&shy;ность доку&shy;мента, предо&shy;ставить боль&shy;шую гиб&shy;кость и возмож&shy;ность управ&shy;ления его представ&shy;ле&shy;нием,
+                                    а также умень&shy;шить слож&shy;ность и повторя&shy;емость в структур&shy;ном содер&shy;жимом. Кроме того, CSS позволяет пред&shy;ставлять один и тот же документ в различ&shy;ных стилях или
+                                    методах вывода, таких как экран&shy;ное представ&shy;ление, печатное представ&shy;ление, чтение голо&shy;сом (специальным голо&shy;совым брау&shy;зером или програм&shy;мой чтения с экрана),
+                                    или при выводе устрой&shy;ствами, исполь&shy;зующи&shy;ми шрифт Брайля.</p>
+                                <p class="skill-p">Опыт: 5 лет, уровень: высокий</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-item col-sm-6 col-xs-12">
+                        <div class="animated">
+                            <a href="#" target="_blank">
+                                <img class="skill-img" src="img/skill-sass.png" alt="css">
+                            </a>
+                        </div>
+
+                        <div class="s-item-body animated">
+                            <h3>SASS</h3>
+                            <h4><a href="#" target="_blank">CSS pre-processor</a></h4>
+                            <div class="text">
+                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
+                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
+                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
+                                    makes it both a time and money-saver for organizations that already have JavaScript pros
+                                    writing client-side code.</p>
+                                <p class="skill-p">Опыт: 2 года, уровень: высокий</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-item col-sm-6 col-xs-12">
+                        <div class="animated">
+                            <a href="#" target="_blank">
+                                <img class="skill-img" src="img/skill-javascript.png" alt="javascript">
+                            </a>
+                        </div>
+
+                        <div class="s-item-body animated">
+                            <h3>JavaScript</h3>
+                            <h4><a href="#" target="_blank">Dynamic programming language</a></h4>
+                            <div class="text">
+                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
+                                    MongoDB, Express.js, AngularJS, and Node.js</p>
+                                <p class="skill-p">Опыт: 5 лет, уровень: средний</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-item col-sm-6 col-xs-12">
+                        <div class="animated">
+                            <a href="#" target="_blank">
+                                <img class="skill-img" src="img/skill-jquery.png" alt="javascript">
+                            </a>
+                        </div>
+
+                        <div class="s-item-body animated">
+                            <h3>jQuerry</h3>
+                            <h4><a href="#" target="_blank">JavaScript library</a></h4>
+                            <div class="text">
+                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
+                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
+                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
+                                    makes it both a time and money-saver for organizations that already have JavaScript pros
+                                    writing client-side code.</p>
+                                <p class="skill-p">Опыт: 4 года, уровень: высокий</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-item col-sm-6 col-xs-12">
+                        <div class="animated">
+                            <a href="#" target="_blank">
+                                <img class="skill-img" src="img/skill-ajax.png" alt="javascript">
+                            </a>
+                        </div>
+
+                        <div class="s-item-body animated">
+                            <h3>AJAX</h3>
+                            <h4><a href="#" target="_blank">Asynchronous JavaScript and XML</a></h4>
+                            <div class="text">
+                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
+                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
+                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
+                                    makes it both a time and money-saver for organizations that already have JavaScript pros
+                                    writing client-side code.</p>
+                                <p class="skill-p">Опыт: 3 года, уровень: средний</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-item col-sm-6 col-xs-12">
+                        <div class="animated">
+                            <a href="#" target="_blank">
+                                <img class="skill-img" src="img/skill-bootstrap.png" alt="javascript">
+                            </a>
+                        </div>
+
+                        <div class="s-item-body animated">
+                            <h3>Bootstrap</h3>
+                            <h4><a href="#" target="_blank">Front-end web framework</a></h4>
+                            <div class="text">
+                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
+                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
+                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
+                                    makes it both a time and money-saver for organizations that already have JavaScript pros
+                                    writing client-side code.</p>
+                                <p class="skill-p">Опыт: 5 лет, уровень: высокий</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-item col-sm-6 col-xs-12">
+                        <div class="animated">
+                            <a href="#" target="_blank">
+                                <img class="skill-img" src="img/skill-gulp.png" alt="javascript">
+                            </a>
+                        </div>
+
+                        <div class="s-item-body animated">
+                            <h3>Gulp</h3>
+                            <h4><a href="#" target="_blank">Toolkit for automating tasks</a></h4>
+                            <div class="text">
+                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
+                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
+                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
+                                    makes it both a time and money-saver for organizations that already have JavaScript pros
+                                    writing client-side code.</p>
+                                <p class="skill-p">Опыт: 2 года, уровень: средний</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-item col-sm-6 col-xs-12">
+                        <div class="animated">
+                            <a href="#" target="_blank">
+                                <img class="skill-img" src="img/skill-git.png" alt="javascript">
+                            </a>
+                        </div>
+
+                        <div class="s-item-body animated">
+                            <h3>Git</h3>
+                            <h4><a href="#" target="_blank">Version control system</a></h4>
+                            <div class="text">
+                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
+                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
+                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
+                                    makes it both a time and money-saver for organizations that already have JavaScript pros
+                                    writing client-side code.</p>
+                                <p class="skill-p">Опыт: 2 года, уровень: средний</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-item col-sm-6 col-xs-12">
+                        <div class="animated">
+                            <a href="#" target="_blank">
+                                <img class="skill-img" src="img/skill-github.png" alt="javascript">
+                            </a>
+                        </div>
+
+                        <div class="s-item-body animated">
+                            <h3>Github</h3>
+                            <h4><a href="#" target="_blank">VCS repository hosting service</a></h4>
+                            <div class="text">
+                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
+                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
+                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
+                                    makes it both a time and money-saver for organizations that already have JavaScript pros
+                                    writing client-side code.</p>
+                                <p class="skill-p">Опыт: 1 год, уровень: средний</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-item col-sm-6 col-xs-12">
+                        <div class="animated">
+                            <a href="#" target="_blank">
+                                <img class="skill-img" src="img/skill-php.png" alt="javascript">
+                            </a>
+                        </div>
+
+                        <div class="s-item-body animated">
+                            <h3>PHP</h3>
+                            <h4><a href="#" target="_blank">Server-side scripting language</a></h4>
+                            <div class="text">
+                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
+                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
+                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
+                                    makes it both a time and money-saver for organizations that already have JavaScript pros
+                                    writing client-side code.</p>
+                                <p class="skill-p">Опыт: 3 года, уровень: начальный</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-item col-sm-6 col-xs-12">
+                        <div class="animated">
+                            <a href="#" target="_blank">
+                                <img class="skill-img" src="img/skill-mysql.png" alt="javascript">
+                            </a>
+                        </div>
+
+                        <div class="s-item-body animated">
+                            <h3>MySQL</h3>
+                            <h4><a href="#" target="_blank">Database management system</a></h4>
+                            <div class="text">
+                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
+                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
+                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
+                                    makes it both a time and money-saver for organizations that already have JavaScript pros
+                                    writing client-side code.</p>
+                                <p class="skill-p">Опыт: 3 лет, уровень: начальный</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-item col-sm-6 col-xs-12">
+                        <div class="animated">
+                            <a href="#" target="_blank">
+                                <img class="skill-img" src="img/skill-oc.png" alt="javascript">
+                            </a>
+                        </div>
+
+                        <div class="s-item-body animated">
+                            <h3>Opencart</h3>
+                            <h4><a href="#" target="_blank">Free eCommerce platform</a></h4>
+                            <div class="text">
+                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
+                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
+                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
+                                    makes it both a time and money-saver for organizations that already have JavaScript pros
+                                    writing client-side code.</p>
+                                <p class="skill-p">Опыт: 4 года, уровень: высокий</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-item col-sm-6 col-xs-12">
+                        <div class="animated">
+                            <a href="#" target="_blank">
+                                <img class="skill-img" src="img/skill-wordpress.png" alt="javascript">
+                            </a>
+                        </div>
+
+                        <div class="s-item-body animated">
+                            <h3>Wordpress</h3>
+                            <h4><a href="#" target="_blank">Free content management system</a></h4>
+                            <div class="text">
+                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
+                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
+                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
+                                    makes it both a time and money-saver for organizations that already have JavaScript pros
+                                    writing client-side code.</p>
+                                <p class="skill-p">Опыт: 2 года, уровень: средний</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-		<div class="flex-box">
-			<div class="item-01">Item-01</div>
-			<div class="item-02">Item-02</div>
-			<div class="item-03">Item-03</div>
-			<div class="item-04">Item-04</div>
-			<div class="item-05">Item-05</div>
-		</div>
+    <footer id="footer">
+        <div class="container">
+        Подвальчик )
+        </div>
+    </footer>
+
+</div>
 
 
-		<h1 class="animate_title animated">Animate.css-77</h1>
-
-	</div>
-
-
-
-	<script type="text/javascript" src="js/libs.min.js"></script>
-	<script type="text/javascript" src="js/functions.js"></script>
-	<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 
 </body>
 </html>
