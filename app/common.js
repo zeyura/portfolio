@@ -1,6 +1,6 @@
 // set rnd header bgd
 var h_rnd = RND(0, 100);
-if( h_rnd > 94 ) {
+if( h_rnd > 95 ) {
     $('#top-header').addClass('bgd-3');
 } else if( h_rnd > 80 ) {
     $('#top-header').addClass('bgd-2');
@@ -8,7 +8,7 @@ if( h_rnd > 94 ) {
     $('#top-header').addClass('bgd-1');
 }
 //set rnd class for #works
-if( h_rnd > 50 ) {
+if( h_rnd > 55 ) {
     $('#works').addClass('inverse');
 }
 
