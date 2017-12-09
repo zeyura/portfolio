@@ -6,13 +6,9 @@
     <link rel="stylesheet" type="text/css" href="css/libs.min.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <style>
-        html {
-            background-color: #1a1a1a;
-        }
-    </style>
+
     <!-- Chrom , FFox OS , Opera -->
     <meta name="theme-color" content="#202020">
     <!-- Windows Phone -->
@@ -33,25 +29,20 @@
         </a>
         <nav id="main-menu">
             <ul>
-                <li><a href="#"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Верхний
-                    контейнер</a></li>
-                <li class="active"><a href="#"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
-                    Портфолио</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Программа</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Комманда</a>
+                <li><a data-href="top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> Наверх</a></li>
+                <li><a data-href="resume"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Навыки</a></li>
+                <li class="drop-down"><a data-href="works"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Портфолио</a>
                     <ul class="inset uli-1">
-                        <li><a href="#">Комманда 1</a>
-                            <ul class="inset uli-2">
-                                <li><a href="#">Комманда 11</a></li>
-                                <li><a href="#">Комманда 12</a></li>
-                                <li><a href="#">Комманда 13</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Комманда 2</a></li>
-                        <li><a href="#">Комманда 3</a></li>
+                        <li><a class="is-cat" data-href="cat-all">Все работы</a></li>
+                        <li><a class="is-cat" data-href="cat-verstka">Верстка</a></li>
+                        <li><a class="is-cat" data-href="cat-javascript">JavaScript</a></li>
+                        <li><a class="is-cat" data-href="cat-landing">Landings</a></li>
+                        <li><a class="is-cat" data-href="cat-opencart">OpenCart</a></li>
+                        <li><a class="is-cat" data-href="cat-php">PHP/MySQL</a></li>
+                        <!--<li><a class="is-cat" class="hidden" data-href="cat-wordpress">WordPress</a></li>-->
                     </ul>
                 </li>
-                <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Контакты</a></li>
+                <li><a data-href="contacts"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Контакты</a></li>
             </ul>
         </nav>
         <div class="exo">
@@ -97,11 +88,11 @@
 
                         <div class="s-item-body animated">
                             <h3>HTML</h3>
-                            <h4><a href="https://ru.wikipedia.org/wiki/HTML" target="_blank">Hypertext markup language</a></h4>
+                            <h4><a href="https://webref.ru/html" target="_blank">Hypertext markup language</a></h4>
                             <div class="text">
                             <p>Стандартизи&shy;рован&shy;ный язык раз&shy;мет&shy;ки доку&shy;мен&shy;тов во Все&shy;мир&shy;ной пау&shy;ти&shy;не.
                                 Большин&shy;ство веб-стра&shy;ниц содер&shy;жат описа&shy;ние раз&shy;мет&shy;ки на язы&shy;ке HTML (или XHTML).
-                                Язык HTML интер&shy;прети&shy;рует&shy;ся брау&shy;зе&shy;рами; полу&shy;ченный в резуль&shy;тате интер&shy;пре&shy;тации форма&shy;тиро&shy;ван&shy;ный текст отобра&shy;жает&shy;ся на экра&shy;не мони&shy;то&shy;ра ком&shy;пью&shy;те&shy;ра или мо&shy;биль&shy;ного уст&shy;ройства.</p>
+                                Язык HTML интер&shy;прети&shy;рует&shy;ся брау&shy;зе&shy;рами; полу&shy;ченный в резуль&shy;тате интер&shy;пре&shy;тации форма&shy;тиро&shy;ван&shy;ный текст отобра&shy;жает&shy;ся на экра&shy;не мони&shy;то&shy;ра ком&shy;пью&shy;те&shy;ра или мо&shy;биль&shy;ного уст&shy;ройства. <span class="more">еще</span></p>
                             <p>HTML создавался как язык для обме&shy;на науч&shy;ной и техни&shy;чес&shy;кой докумен&shy;та&shy;ци&shy;ей, пригод&shy;ный для исполь&shy;зова&shy;ния людь&shy;ми, не являю&shy;щими&shy;ся специ&shy;алиста&shy;ми в облас&shy;ти вёрстки.
                                 HTML успешно справ&shy;лял&shy;ся с пробле&shy;мой слож&shy;ности SGML путём опреде&shy;ле&shy;ния неболь&shy;шого на&shy;бора струк&shy;турных и семан&shy;тичес&shy;ких эле&shy;мен&shy;тов - дескрип&shy;торов.
                                 Был разра&shy;ботан британс&shy;ким учёным Тимом Бернер&shy;сом-Ли прибли&shy;зитель&shy;но в 1986-1991 годах в сте&shy;нах ЦЕРНа в Женеве, Швей&shy;ца&shy;рия.</p>
@@ -112,17 +103,17 @@
 
                     <div class="s-item col-sm-6 col-xs-12">
                         <div class="animated">
-                            <a href="#" target="_blank">
+                            <a href="https://ru.wikipedia.org/wiki/CSS" target="_blank">
                                 <img class="skill-img" src="img/skill-css.png" alt="css">
                             </a>
                         </div>
 
                         <div class="s-item-body animated">
                             <h3>CSS</h3>
-                            <h4><a href="#" target="_blank">Design language</a></h4>
+                            <h4><a href="https://webref.ru/css" target="_blank">Design language</a></h4>
                             <div class="text">
                                 <p>Каскадные таблицы стилей - формаль&shy;ный язык описа&shy;ния внеш&shy;него вида докумен&shy;та, написан&shy;ного с исполь&shy;зова&shy;нием языка раз&shy;метки.
-                                    Преимущест&shy;вен&shy;но исполь&shy;зует&shy;ся как сред&shy;ство описа&shy;ния, оформ&shy;ления внеш&shy;него вида веб-страниц, написан&shy;ных с помощью язы&shy;ков раз&shy;метки HTML и XHTML.</p>
+                                    Преимущест&shy;вен&shy;но исполь&shy;зует&shy;ся как сред&shy;ство описа&shy;ния, оформ&shy;ления внеш&shy;него вида веб-страниц, написан&shy;ных с помощью язы&shy;ков раз&shy;метки HTML и XHTML. <span class="more">еще</span></p>
                                 <p>CSS используется создателями веб-страниц для зада&shy;ния цветов, шрифтов, распо&shy;ложения отдель&shy;ных блоков и других аспектов пред&shy;став&shy;ления внеш&shy;него вида этих веб-страниц.
                                     Основ&shy;ной целью разра&shy;ботки CSS являлось разделе&shy;ние описания логи&shy;ческой струк&shy;туры веб-страницы (которое произво&shy;дится с помощью HTML или других языков разметки) от
                                     описания внеш&shy;него вида этой веб-страницы (которое теперь произ&shy;водится с помощью формального языка CSS).
@@ -137,20 +128,22 @@
 
                     <div class="s-item col-sm-6 col-xs-12">
                         <div class="animated">
-                            <a href="#" target="_blank">
+                            <a href="https://ru.wikipedia.org/wiki/Sass" target="_blank">
                                 <img class="skill-img" src="img/skill-sass.png" alt="css">
                             </a>
                         </div>
 
                         <div class="s-item-body animated">
                             <h3>SASS</h3>
-                            <h4><a href="#" target="_blank">CSS pre-processor</a></h4>
+                            <h4><a href="https://sass-scss.ru/documentation/sintaksis/" target="_blank">CSS pre-processor</a></h4>
                             <div class="text">
-                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
-                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
-                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
-                                    makes it both a time and money-saver for organizations that already have JavaScript pros
-                                    writing client-side code.</p>
+                                <p>Sass - это метаязык на основе CSS, предна&shy;значен&shy;ный для увели&shy;чения уровня абстракции CSS кода и упро&shy;щения файлов каскад&shy;ных таблиц стилей.
+                                    Одна из ключе&shy;вых особен&shy;ностей - вложенные правила, которые облег&shy;чают процесс соз&shy;да&shy;ния и редакти&shy;рова&shy;ния вложен&shy;ных селек&shy;торов. <span class="more">еще</span></p>
+                                <p>Sass добавляет к CSS константы, примеси, услов&shy;ные развет&shy;вления и циклы. Это облег&shy;чает под&shy;держку целост&shy;ности данных внутри боль&shy;шого набора стилей.
+                                    Кон&shy;стан&shy;ты позволяют установить зна&shy;че&shy;ние и исполь&shy;зовать его внутри стилей, с по&shy;мо&shy;щью при&shy;месей то же самое можно сделать с блоком атри&shy;бу&shy;тов стиля.<br>
+                                    Язык имеет два синтаксиса:<br>
+                                    <b>sass</b> — отличается отсутствием фигур&shy;ных скобок, в нём вложенные элемен&shy;ты реали&shy;зова&shy;ны с помощью отступов;<br>
+                                    <b>scss</b> (Sassy CSS) — использует фигур&shy;ные скобки, как и сам CSS.</p>
                                 <p class="skill-p">Опыт: 2 года, уровень: высокий</p>
                             </div>
                         </div>
@@ -158,17 +151,21 @@
 
                     <div class="s-item col-sm-6 col-xs-12">
                         <div class="animated">
-                            <a href="#" target="_blank">
+                            <a href="https://ru.wikipedia.org/wiki/JavaScript" target="_blank">
                                 <img class="skill-img" src="img/skill-javascript.png" alt="javascript">
                             </a>
                         </div>
 
                         <div class="s-item-body animated">
                             <h3>JavaScript</h3>
-                            <h4><a href="#" target="_blank">Dynamic programming language</a></h4>
+                            <h4><a href="https://learn.javascript.ru/" target="_blank">Dynamic programming language</a></h4>
                             <div class="text">
-                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
-                                    MongoDB, Express.js, AngularJS, and Node.js</p>
+                                <p>Мультипарадиг&shy;менный язык програм&shy;миро&shy;ва&shy;ния, поддержи&shy;вающий объектно-ориенти&shy;рован&shy;ный, импера&shy;тивный и функцио&shy;нальный стили. Является реали&shy;зацией языка ECMAScript.
+                                    Наиболее широкое приме&shy;не&shy;ние находит в браузе&shy;рах как язык сцена&shy;риев для прида&shy;ния интерак&shy;тив&shy;ности веб-страни&shy;цам. <span class="more">еще</span></p>
+                                <p>JavaScript является объектно-ориен&shy;тиро&shy;ван&shy;ным языком, но исполь&shy;зуемое в языке прототи&shy;пиро&shy;вание обуслав&shy;ливает отличия в работе с объек&shy;тами по сравне&shy;нию с
+                                    традици&shy;он&shy;ными класс-ориенти&shy;рован&shy;ными языками.
+                                    Кроме того, JavaScript имеет ряд свойств, присущих функцио&shy;наль&shy;ным языкам - функции как объекты первого класса, объекты как списки, карринг, аноним&shy;ные функции,
+                                    замыкания - что придаёт языку допол&shy;нитель&shy;ную гиб&shy;кость.</p>
                                 <p class="skill-p">Опыт: 5 лет, уровень: средний</p>
                             </div>
                         </div>
@@ -176,20 +173,21 @@
 
                     <div class="s-item col-sm-6 col-xs-12">
                         <div class="animated">
-                            <a href="#" target="_blank">
+                            <a href="https://ru.wikipedia.org/wiki/JQuery" target="_blank">
                                 <img class="skill-img" src="img/skill-jquery.png" alt="javascript">
                             </a>
                         </div>
 
                         <div class="s-item-body animated">
                             <h3>jQuerry</h3>
-                            <h4><a href="#" target="_blank">JavaScript library</a></h4>
+                            <h4><a href="http://jquery.page2page.ru/index.php5/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" target="_blank">JavaScript library</a></h4>
                             <div class="text">
-                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
-                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
-                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
-                                    makes it both a time and money-saver for organizations that already have JavaScript pros
-                                    writing client-side code.</p>
+                                <p>Библиотека JavaScript, фокусирую&shy;щая&shy;ся на взаимо&shy;действии JavaScript и HTML. Библио&shy;тека jQuery помогает легко полу&shy;чать доступ к любому эле&shy;мен&shy;ту DOM,
+                                    обращаться к атрибу&shy;там и содер&shy;жимому элемен&shy;тов DOM, манипу&shy;лиро&shy;вать ими. Также библио&shy;тека jQuery предо&shy;став&shy;ляет удоб&shy;ный API для работы с AJAX. <span class="more">еще</span></p>
+                                <p>Библиотека jQuery содержит функ&shy;цио&shy;наль&shy;ность, полезную для макси&shy;мально широ&shy;кого круга задач.
+                                    Тем не менее, разработ&shy;чиками библио&shy;теки не ставилась задача совмещения в jQuery функций, которые подошли бы всюду, посколь&shy;ку это при&shy;вело бы к боль&shy;шому коду,
+                                    бо́льшая часть кото&shy;рого не востре&shy;бо&shy;вана. Поэтому была реали&shy;зо&shy;вана архитек&shy;тура компакт&shy;ного универ&shy;саль&shy;ного ядра библио&shy;теки и пла&shy;гинов.
+                                    Это позво&shy;ляет собрать для ресурса именно ту JavaScript-функцио&shy;наль&shy;ность, которая на нём была бы востре&shy;бо&shy;вана.</p>
                                 <p class="skill-p">Опыт: 4 года, уровень: высокий</p>
                             </div>
                         </div>
@@ -197,62 +195,66 @@
 
                     <div class="s-item col-sm-6 col-xs-12">
                         <div class="animated">
-                            <a href="#" target="_blank">
+                            <a href="https://ru.wikipedia.org/wiki/AJAX" target="_blank">
                                 <img class="skill-img" src="img/skill-ajax.png" alt="javascript">
                             </a>
                         </div>
 
                         <div class="s-item-body animated">
                             <h3>AJAX</h3>
-                            <h4><a href="#" target="_blank">Asynchronous JavaScript and XML</a></h4>
+                            <h4><a href="http://jquery.page2page.ru/index.php5/Ajax" target="_blank">Asynchronous JavaScript and XML</a></h4>
                             <div class="text">
-                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
-                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
-                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
-                                    makes it both a time and money-saver for organizations that already have JavaScript pros
-                                    writing client-side code.</p>
-                                <p class="skill-p">Опыт: 3 года, уровень: средний</p>
+                                <p>Подход к построению интерактив&shy;ных поль&shy;зова&shy;тель&shy;ских интер&shy;фейсов веб-прило&shy;жений, заключаю&shy;щийся в «фоновом» обмене дан&shy;ными брау&shy;зера с веб-серве&shy;ром.
+                                    В резуль&shy;тате, при обновле&shy;нии данных веб-страни&shy;ца не пере&shy;загру&shy;жается пол&shy;ностью, и веб-прило&shy;же&shy;ния стано&shy;вятся быстрее и удоб&shy;нее. <span class="more">еще</span></p>
+                                <p>AJAX базируется на двух основ&shy;ных прин&shy;ципах:<br>
+                                    - использование технологии динами&shy;ческого обращения к серверу «на лету», без пере&shy;загрузки стра&shy;ницы пол&shy;ностью, например с исполь&shy;зова&shy;нием XMLHttpRequest (основ&shy;ной объект);<br>
+                                - использование DHTML (CSS, DOM и JavaScript) для дина&shy;мичес&shy;кого изме&shy;не&shy;ния содер&shy;жания стра&shy;ницы.
+                                </p>
+                                <p class="skill-p">Опыт: 3 года, уровень: высокий</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="s-item col-sm-6 col-xs-12">
                         <div class="animated">
-                            <a href="#" target="_blank">
+                            <a href="https://ru.wikipedia.org/wiki/Bootstrap_(%D1%84%D1%80%D0%B5%D0%B9%D0%BC%D0%B2%D0%BE%D1%80%D0%BA)" target="_blank">
                                 <img class="skill-img" src="img/skill-bootstrap.png" alt="javascript">
                             </a>
                         </div>
 
                         <div class="s-item-body animated">
                             <h3>Bootstrap</h3>
-                            <h4><a href="#" target="_blank">Front-end web framework</a></h4>
+                            <h4><a href="https://getbootstrap.com/docs/3.3/getting-started/" target="_blank">Front-end web framework</a></h4>
                             <div class="text">
-                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
-                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
-                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
-                                    makes it both a time and money-saver for organizations that already have JavaScript pros
-                                    writing client-side code.</p>
-                                <p class="skill-p">Опыт: 5 лет, уровень: высокий</p>
+                                <p>Также известен как Twitter Bootstrap - сво&shy;бод&shy;ный набор инстру&shy;мен&shy;тов для соз&shy;дания сайтов и веб-прило&shy;же&shy;ний.
+                                    Включает в себя HTML- и CSS-шабло&shy;ны оформле&shy;ния для типо&shy;гра&shy;фики, веб-форм, кнопок, меток, блоков нави&shy;гации и прочих компо&shy;нен&shy;тов веб-интер&shy;фейса, включая JavaScript-расшире&shy;ния. <span class="more">еще</span></p>
+                                <p>Открыт под названием Bootstrap 19 августа 2011 года.
+                                    Основ&shy;ными ново&shy;введени&shy;ями второй версии, появив&shy;шейся 31 января 2012 года, стали 12-колоноч&shy;ная сетка и под&shy;держка адап&shy;тив&shy;ности.
+                                    Третья версия выпу&shy;щена 19 августа 2013 года. В ней адаптив&shy;ность полу&shy;чила дальней&shy;шее развитие, был осуществлён переход к концеп&shy;ции mobile first,
+                                    оптими&shy;зации прежде всего под мобиль&shy;ные устрой&shy;ства. Дизайн по умол&shy;чанию стал плоским.
+                                    Работа над четвёр&shy;той вер&shy;сией начата 29 октября 2014 года. Вторая бета выпу&shy;щена 19 октября 2017.
+                                </p>
+                                <p class="skill-p">Опыт: 5 лет, уровень: средний</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="s-item col-sm-6 col-xs-12">
                         <div class="animated">
-                            <a href="#" target="_blank">
+                            <a href="https://ru.wikipedia.org/wiki/Gulp" target="_blank">
                                 <img class="skill-img" src="img/skill-gulp.png" alt="javascript">
                             </a>
                         </div>
 
                         <div class="s-item-body animated">
                             <h3>Gulp</h3>
-                            <h4><a href="#" target="_blank">Toolkit for automating tasks</a></h4>
+                            <h4><a href="https://gulpjs.com/" target="_blank">Toolkit for automating tasks</a></h4>
                             <div class="text">
-                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
-                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
-                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
-                                    makes it both a time and money-saver for organizations that already have JavaScript pros
-                                    writing client-side code.</p>
+                                <p>Таск-менеджер для автоматического выпол&shy;нения часто исполь&shy;зуе&shy;мых задач (например, минифи&shy;кации, тестиро&shy;вания, объеди&shy;нения файлов), написан&shy;ный на языке JavaScript.
+                                    Програм&shy;мное обеспе&shy;чение исполь&shy;зует командную строку для запуска задач, опреде&shy;лён&shy;ных в файле Gulpfile.  <span class="more">еще</span></p>
+                                <p>Так же в Gulp усовершенствована система сборки. Это значит, что помимо запуска задач, можно также копи&shy;ровать
+                                    файлы с места на место, компили&shy;ро&shy;вать и развёр&shy;тывать проект в новом окру&shy;жении.
+                                    На 2017-й год насчи&shy;ты&shy;вает&shy;ся более 3100 плаги&shy;нов для Gulp.</p>
                                 <p class="skill-p">Опыт: 2 года, уровень: средний</p>
                             </div>
                         </div>
@@ -260,20 +262,19 @@
 
                     <div class="s-item col-sm-6 col-xs-12">
                         <div class="animated">
-                            <a href="#" target="_blank">
+                            <a href="https://ru.wikipedia.org/wiki/Git" target="_blank">
                                 <img class="skill-img" src="img/skill-git.png" alt="javascript">
                             </a>
                         </div>
 
                         <div class="s-item-body animated">
                             <h3>Git</h3>
-                            <h4><a href="#" target="_blank">Version control system</a></h4>
+                            <h4><a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch02.html" target="_blank">Version control system</a></h4>
                             <div class="text">
-                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
-                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
-                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
-                                    makes it both a time and money-saver for organizations that already have JavaScript pros
-                                    writing client-side code.</p>
+                                <p>Git - это распределённая система управления вер&shy;сиями. Под&shy;держи&shy;вает быстрое разде&shy;ление и слияние вер&shy;сий, включает инстру&shy;мен&shy;ты для визуали&shy;зации и нави&shy;га&shy;ции по нелиней&shy;ной истории раз&shy;работ&shy;ки. <span class="more">еще</span></p>
+                                <p>Git предоставляет каждому разработ&shy;чику локаль&shy;ную копию всей истории раз&shy;ра&shy;ботки, измене&shy;ния копиру&shy;ют&shy;ся из одного репо&shy;зито&shy;рия в другой.
+                                    Репо&shy;зито&shy;рий Git пред&shy;став&shy;ляет собой ката&shy;лог файло&shy;вой сис&shy;темы, в кото&shy;ром нахо&shy;дятся файлы конфигу&shy;рации репо&shy;зи&shy;тория,
+                                    файлы жур&shy;налов, храня&shy;щие операции, выпол&shy;няемые над репо&shy;зито&shy;рием, индекс, описывающий располо&shy;жение файлов, и храни&shy;лище, содер&shy;жащее соб&shy;ственно файлы.</p>
                                 <p class="skill-p">Опыт: 2 года, уровень: средний</p>
                             </div>
                         </div>
@@ -281,20 +282,20 @@
 
                     <div class="s-item col-sm-6 col-xs-12">
                         <div class="animated">
-                            <a href="#" target="_blank">
+                            <a href="https://ru.wikipedia.org/wiki/GitHub" target="_blank">
                                 <img class="skill-img" src="img/skill-github.png" alt="javascript">
                             </a>
                         </div>
 
                         <div class="s-item-body animated">
                             <h3>Github</h3>
-                            <h4><a href="#" target="_blank">VCS repository hosting service</a></h4>
+                            <h4><a href="https://github.com/" target="_blank">VCS repository hosting service</a></h4>
                             <div class="text">
-                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
-                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
-                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
-                                    makes it both a time and money-saver for organizations that already have JavaScript pros
-                                    writing client-side code.</p>
+                                <p>Крупнейший веб-сервис для хостинга IT-проектов и их совмест&shy;ной раз&shy;работки. Основан на сис&shy;теме контроля версий Git и разра&shy;ботан на Ruby on Rails и Erlang ком&shy;па&shy;нией GitHub, Inc. <span class="more">еще</span></p>
+                                <p>Слоган сервиса - «Social Coding» - «Пишем код вместе». На футбол&shy;ках же печа&shy;тают сов&shy;сем другую фразу: «Fork you!» («Ответвись!»).
+                                    С одной сто&shy;роны, она со&shy;звучна с англо&shy;языч&shy;ным ругатель&shy;ством и наме&shy;кает на нефор&shy;маль&shy;ную атмо&shy;сферу.
+                                    С другой, эти слова напо&shy;минают, что соз&shy;давать новые форки с Git можно легко и без&shy;болез&shy;ненно - тради&shy;ционно, к соз&shy;данию веток разра&shy;ботчики проек&shy;тов с открытым исход&shy;ным кодом
+                                    относят&shy;ся нега&shy;тивно - а также со&shy;звучна назва&shy;нию одной из воз&shy;мож&shy;ностей Github - очереди форков.</p>
                                 <p class="skill-p">Опыт: 1 год, уровень: средний</p>
                             </div>
                         </div>
@@ -302,20 +303,20 @@
 
                     <div class="s-item col-sm-6 col-xs-12">
                         <div class="animated">
-                            <a href="#" target="_blank">
+                            <a href="https://ru.wikipedia.org/wiki/PHP" target="_blank">
                                 <img class="skill-img" src="img/skill-php.png" alt="javascript">
                             </a>
                         </div>
 
                         <div class="s-item-body animated">
                             <h3>PHP</h3>
-                            <h4><a href="#" target="_blank">Server-side scripting language</a></h4>
+                            <h4><a href="http://php.net/manual/ru/langref.php" target="_blank">Server-side scripting language</a></h4>
                             <div class="text">
-                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
-                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
-                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
-                                    makes it both a time and money-saver for organizations that already have JavaScript pros
-                                    writing client-side code.</p>
+                                <p>Первоначально <i>Personal Home Page Tools</i> -  скрипто&shy;вый язык общего назна&shy;чения, интенсивно приме&shy;няемый для разра&shy;ботки веб-приложений.
+                                    В настоящее время под&shy;держива&shy;ется подавляю&shy;щим большин&shy;ством хостинг-провай&shy;деров и является одним из лидеров среди языков, применя&shy;ющихся для соз&shy;дания дина&shy;мических веб-сайтов.  <span class="more">еще</span></p>
+                                <p>В области веб-программирования, в част&shy;ности сервер&shy;ной части, PHP - один из популяр&shy;ных сценар&shy;ных языков (наряду с JSP, Perl и языками, исполь&shy;зуемыми в ASP.NET).
+                                    Популяр&shy;ность в области постро&shy;ения веб-сайтов опреде&shy;ляет&shy;ся нали&shy;чием большого набора встро&shy;енных средств для разра&shy;ботки веб-прило&shy;жений. В насто&shy;ящее время PHP исполь&shy;зуется сотнями тысяч разра&shy;ботчиков.
+                                    Согласно рейтингу корпо&shy;рации TIOBE, базирующемся на данных поисковых систем, в мае 2016 года PHP находился на 6 месте среди языков програм&shy;миро&shy;вания.</p>
                                 <p class="skill-p">Опыт: 3 года, уровень: начальный</p>
                             </div>
                         </div>
@@ -323,41 +324,50 @@
 
                     <div class="s-item col-sm-6 col-xs-12">
                         <div class="animated">
-                            <a href="#" target="_blank">
+                            <a href="https://ru.wikipedia.org/wiki/MySQL" target="_blank">
                                 <img class="skill-img" src="img/skill-mysql.png" alt="javascript">
                             </a>
                         </div>
 
                         <div class="s-item-body animated">
                             <h3>MySQL</h3>
-                            <h4><a href="#" target="_blank">Database management system</a></h4>
+                            <h4><a href="https://dev.mysql.com/doc/refman/5.7/en/functions.html" target="_blank">Database management system</a></h4>
                             <div class="text">
-                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
-                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
-                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
-                                    makes it both a time and money-saver for organizations that already have JavaScript pros
-                                    writing client-side code.</p>
-                                <p class="skill-p">Опыт: 3 лет, уровень: начальный</p>
+                                <p>MySQL - свободная реляционная система управ&shy;ления базами дан&shy;ных, разра&shy;ботку и под&shy;держку осуществ&shy;ляет корпо&shy;рация Oracle.
+                                    Обычно исполь&shy;зуется в качестве сервера, к которому обращаются локаль&shy;ные или удалён&shy;ные клиенты, является реше&shy;нием для малых и сред&shy;них прило&shy;жений. <span class="more">еще</span></p>
+                                <p>Гибкость СУБД MySQL обеспечивается под&shy;держкой большого коли&shy;чества типов таблиц: поль&shy;зова&shy;тели могут выбрать как таб&shy;лицы типа MyISAM, поддер&shy;живающие полно&shy;текстовый поиск, так и таблицы
+                                    InnoDB, под&shy;держи&shy;вающие транз&shy;акции на уровне отдель&shy;ных записей.
+                                    Более того, СУБД MySQL постав&shy;ляется со спе&shy;ци&shy;альным типом таблиц EXAMPLE, демон&shy;стриру&shy;ющим прин&shy;ципы соз&shy;дания новых типов таблиц.</p>
+                                <p>26 февраля 2008 года Sun Microsystems приобрела MySQL AB за 1 млрд долларов, 27 января 2010 года Oracle при&shy;обрела Sun Microsystems за 7,4 млрд долларов и вклю&shy;чила MySQL в свою линейку СУБД!</p>
+                                <p class="skill-p">Опыт: 3 лет, уровень: средний</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="s-item col-sm-6 col-xs-12">
                         <div class="animated">
-                            <a href="#" target="_blank">
+                            <a href="https://ru.wikipedia.org/wiki/OpenCart" target="_blank">
                                 <img class="skill-img" src="img/skill-oc.png" alt="javascript">
                             </a>
                         </div>
 
                         <div class="s-item-body animated">
                             <h3>Opencart</h3>
-                            <h4><a href="#" target="_blank">Free eCommerce platform</a></h4>
+                            <h4><a href="https://opencartforum.com/" target="_blank">Free eCommerce platform</a></h4>
                             <div class="text">
-                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
-                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
-                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
-                                    makes it both a time and money-saver for organizations that already have JavaScript pros
-                                    writing client-side code.</p>
+                                <p>Платформа, ориентированная на создание интернет-магазинов, разме&shy;щение в них товаров по кате&shy;гориям с различ&shy;ными вариан&shy;тами доставки и оплаты.
+                                    В админи&shy;стратор&shy;ской панели есть возмож&shy;ность управлять зака&shy;зами и доступно управ&shy;ление несколь&shy;кими платёж&shy;ными сервисами. <span class="more">еще</span></p>
+                                <p>В сентябре 2014 года OpenCart стал самым по&shy;пу&shy;ляр&shy;ным реше&shy;нием для интернет-коммерции в Китае, а по состоянию на август 2015 года на OpenCart работало 6,42% всех интернет-магазинов мира.
+                                    По этому показа&shy;телю OpenCart стал третьим в мире, отстав только от WooCommerce и Magento и опередив  OSCommerce, ZenCart и Shopify.</p>
+                                <p>Как преимущества программного обеспе&shy;чения офици&shy;альный сайт отмечает следу&shy;ющие пункты:<br>
+                                <span style="display: inline-block; padding-left: 8px; padding-top: 6px;">
+                                - открытость исходного кода;<br>
+                                - неограниченность категорий, продуктов и их произ&shy;во&shy;дите&shy;лей;<br>
+                                - поддержка мультиязычности и перевода интерфейса;<br>
+                                - неограниченная модульная система, для создания несколь&shy;ких магази&shy;нов на одной плат&shy;форме;<br>
+                                - поисковая оптимизация и др.
+                            </span>
+                                </p>
                                 <p class="skill-p">Опыт: 4 года, уровень: высокий</p>
                             </div>
                         </div>
@@ -365,20 +375,19 @@
 
                     <div class="s-item col-sm-6 col-xs-12">
                         <div class="animated">
-                            <a href="#" target="_blank">
+                            <a href="https://ru.wikipedia.org/wiki/WordPress" target="_blank">
                                 <img class="skill-img" src="img/skill-wordpress.png" alt="javascript">
                             </a>
                         </div>
 
                         <div class="s-item-body animated">
                             <h3>Wordpress</h3>
-                            <h4><a href="#" target="_blank">Free content management system</a></h4>
+                            <h4><a href="https://codex.wordpress.org/ru:Main_Page" target="_blank">Free content management system</a></h4>
                             <div class="text">
-                                <p>Now it is new for me yet, but… MEAN is a collection of JavaScript-based technologies —
-                                    MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the
-                                    client and server sides to databases, MEAN is a full-stack development toolkit. So that
-                                    makes it both a time and money-saver for organizations that already have JavaScript pros
-                                    writing client-side code.</p>
+                                <p>WordPress - система управления содержимым сайта с от&shy;кры&shy;тым исход&shy;ным кодом; напи&shy;сана на PHP; сервер базы дан&shy;ных - MySQL. Сфера приме&shy;нения - от блогов до доста&shy;точно слож&shy;ных
+                                    новост&shy;ных ресур&shy;сов и интер&shy;нет-магази&shy;нов. Встроен&shy;ная система «тем» и «плаги&shy;нов» вместе с удачной архитек&shy;турой позво&shy;ляет конструи&shy;ровать проекты широкой функцио&shy;наль&shy;ной слож&shy;ности. <span class="more">еще</span></p>
+                                <p>2011 год - признана открытым веб-приложе&shy;нием года на ежегод&shy;ном кон&shy;курсе The Critters.
+                                    По данным лабора&shy;тории W3Techs, в 2015 году 25% всех сайтов рабо&shy;тали под управ&shy;лени&shy;ем WordPress.</p>
                                 <p class="skill-p">Опыт: 2 года, уровень: средний</p>
                             </div>
                         </div>
@@ -389,15 +398,236 @@
         </div>
     </section>
 
+    <section id="works" class="box">
+
+        <div class="container">
+
+            <div class="section-header animated">
+                <h2>Портфолио</h2>
+                <div class="section-descr-wrap">
+                    <div class="section-descr">
+                        мои лучшие работы
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs animated">
+                <ul>
+                    <li class="tab active" data-filter="cat-all"><span>Все работы</span></li>
+                    <li class="tab" data-filter="cat-verstka"><span>Верстка</span></li>
+                    <li class="tab" data-filter="cat-javascript"><span>JavaScript</span></li>
+                    <li class="tab" data-filter="cat-landing"><span>Landings</span></li>
+                    <li class="tab" data-filter="cat-opencart"><span>OpenCart</span></li>
+                    <li class="tab" data-filter="cat-php"><span>PHP/MySQL</span></li>
+                    <li class="tab hidden" data-filter="cat-wordpress"><span>WordPress</span></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="section-content animated">
+
+            <div class="container">
+
+                <div class="row_ resume-container">
+
+                    <div class="s-item col-xs-12 cat-javascript cat-php">
+                        <a href="http://keyget.zy.zzz.com.ua/" target="_blank">
+                            <img src="img/port-Keyget.png" alt="картинка сайт Кейгет" />
+                            <div class="steals">
+                                <img src="img/port-Keyget-2.png" alt="картинка сайт Кейгет" />
+                            </div>
+                            <div class="steals-2">
+                                <div class="inner">
+                                    <h3>Keyget</h3>
+                                    <p>клавиатурный тренажер</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="s-item col-xs-12 cat-opencart cat-php">
+                        <a href="http://fiolet.com.ru/" target="_blank">
+                            <img src="img/port-Fiolet-2.jpg" alt="магазин fiolet" />
+                            <div class="steals">
+                                <img src="img/port-Fiolet.jpg" alt="магазин fiolet" />
+                            </div>
+                            <div class="steals-2">
+                                <div class="inner">
+                                    <h3>Fiolet</h3>
+                                    <p>магазин фито&shy;продукции</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="s-item col-xs-12 cat-javascript">
+                        <a href="/webmagic/index.html" target="_blank">
+                            <img src="img/port-WebMagic.jpg" alt="картинка сайт webmagic" />
+                            <div class="steals">
+                                <img src="img/port-WebMagic-2.jpg" alt="картинка сайт webmagic" />
+                            </div>
+                            <div class="steals-2">
+                                <div class="inner">
+                                    <h3>WebMagic</h3>
+                                    <p>мое первое портфолио</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="s-item col-xs-12 cat-javascript">
+                        <a href="/webmagic/geostarter/index.html" target="_blank">
+                            <img src="img/port-Geostarter.jpg" alt="картинка сайт geostarter" />
+                            <div class="steals">
+                                <img src="img/port-Geostarter-2.jpg" alt="картинка сайт geostarter" />
+                            </div>
+                            <div class="steals-2">
+                                <div class="inner">
+                                    <h3>Geostarter</h3>
+                                    <p>стартовая страничка геопортала</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="s-item col-xs-12 cat-landing">
+                        <a href="/fuma/index.html" target="_blank">
+                            <img src="img/port-FUMA-2.jpg" alt="картинка fuma landing" />
+                            <div class="steals">
+                                <img src="img/port-FUMA.jpg" alt="картинка fuma landing" />
+                            </div>
+                            <div class="steals-2">
+                                <div class="inner">
+                                    <h3>Fuma Dubai</h3>
+                                    <p>туристический лендинг</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="s-item col-xs-12 cat-opencart">
+                        <a href="https://prokreatif.ru/" target="_blank">
+                            <img src="img/port-prokreatif.jpg" alt="магазин prokreatif" />
+                            <div class="steals">
+                                <img src="img/port-prokreatif-2.jpg" alt="магазин prokreatif" />
+                            </div>
+                            <div class="steals-2">
+                                <div class="inner">
+                                    <h3>Prokreatif</h3>
+                                    <p>магазин свадебных аксессуаров</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="s-item col-xs-12 cat-opencart">
+                        <a href="http://bonachibo.ru/koshachiy-korm/super-premium-cats/" target="_blank">
+                            <img src="img/port-bona.jpg" alt="магазин bonachibo" />
+                            <div class="steals">
+                                <img src="img/port-bona-2.jpg" alt="магазин bonachibo" />
+                            </div>
+                            <div class="steals-2">
+                                <div class="inner">
+                                    <h3>Bonachibo</h3>
+                                    <p>магазин кормов для животных</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="s-item col-xs-12 cat-landing">
+                        <a href="/beauty/index.html" target="_blank">
+                            <img src="img/port-salon.jpg" alt="salon landing" />
+                            <div class="steals">
+                                <img src="img/port-salon.jpg" alt="salon landing" />
+                            </div>
+                            <div class="steals-2">
+                                <div class="inner">
+                                    <h3>Beauty</h3>
+                                    <p>лендинг массажного оборудования</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="s-item col-xs-12 cat-verstka cat-javascript">
+                        <a href="/gosha/index.html" target="_blank">
+                            <img src="img/port-GOSHA.jpg" alt="дракоша Гоша" />
+                            <div class="steals">
+                                <img src="img/port-GOSHA-2.jpg" alt="дракоша Гоша" />
+                            </div>
+                            <div class="steals-2">
+                                <div class="inner">
+                                    <h3>Гоша</h3>
+                                    <p>сайт для детей</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="s-item col-xs-12 cat-verstka">
+                        <a href="/pdk/index.html" target="_blank">
+                            <img src="img/port-PDK.jpg" alt="верстка магазина пдк" />
+                            <div class="steals">
+                                <img src="img/port-PDK-2.jpg" alt="верстка магазина пдк" />
+                            </div>
+                            <div class="steals-2">
+                                <div class="inner">
+                                    <h3>PDK</h3>
+                                    <p>верстка магазина ПДК</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="s-item col-xs-12 cat-verstka">
+                        <a href="/almaz/catalog.html" target="_blank">
+                            <img src="img/port-almaz.jpg" alt="верстка магазина АМИ" />
+                            <div class="steals">
+                                <img src="img/port-almaz.jpg" alt="верстка магазина АМИ" />
+                            </div>
+                            <div class="steals-2">
+                                <div class="inner">
+                                    <h3>АМИ</h3>
+                                    <p>верстка магазина АМИ</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="s-item col-xs-12 cat-javascript">
+                        <a href="/webmagic/geostarter/lands-table/lands.html" target="_blank">
+                            <img src="img/port-tsm.png" alt="картинка Таблица стран" />
+                            <div class="steals">
+                                <img src="img/port-tsm-2.png" alt="картинка Таблица стран" />
+                            </div>
+                            <div class="steals-2">
+                                <div class="inner">
+                                    <h3>Таблица стран</h3>
+                                    <p>сортировка и мультифильтр</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+    </section>
+
 
     <footer id="footer">
-        <div class="container">
-        Подвальчик )
-        </div>
+        <section id="contacts" class="box">
+            <div class="container">
+                Подвальчик )
+            </div>
+        </section>
     </footer>
 
 </div>
 
+<div id="top-div"><span class="glyphicon glyphicon-menu-up"></span></div>
 
 <script type="text/javascript" src="js/libs.min.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
